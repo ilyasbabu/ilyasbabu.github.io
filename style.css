@@ -7,12 +7,50 @@
     left: 0;
     z-index: 9999;
 }
+.navbar-header{
+    width: auto;
+    height: auto;
+    padding-left: 26%;
+    padding-top: 6px;   
+}
 .navbar-brand{
     position: absolute;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
-    font-weight: bold;
+    font-weight: 500;
     padding-left: 30px;
     padding-top: 25px;
+    font-family: 'Outfit', sans-serif;
+}
+.nav-items{
+    position: absolute;
+    top: 0;
+    padding-top: 17px;
+    padding-right: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 30px;
+}
+.nav-links{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+
+}
+.nav-social{
+    float: right;
+    padding-right: 24%;
+    padding-top: 14px;
+}
+.social{
+    height: 20px;
+    width: 20px;
 }
