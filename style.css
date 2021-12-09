@@ -112,8 +112,5 @@ li{
             width: 100vw;
             background-color: black;
         }
-        script{
-            display: none;
-            pointer-events: none;
-        }
+        
     }
