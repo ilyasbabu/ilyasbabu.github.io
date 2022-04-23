@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f9dfcae3.css",
+    "main.js": "/static/js/main.bc2cf156.js",
+    "static/media/artspo.png": "/static/media/artspo.7efa10acd4b31035e323.png",
+    "static/media/kripa.png": "/static/media/kripa.08908fe86cff8a721f4c.png",
+    "static/media/resume.pdf": "/static/media/resume.0d83d8cd585b40cfff7e.pdf",
+    "static/media/certi.png": "/static/media/certi.5c4dcb1ce1987d9cbc2c.png",
+    "static/media/qbank.png": "/static/media/qbank.d41ec1134e642f33f260.png",
+    "index.html": "/index.html",
+    "main.f9dfcae3.css.map": "/static/css/main.f9dfcae3.css.map",
+    "main.bc2cf156.js.map": "/static/js/main.bc2cf156.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9dfcae3.css",
+    "static/js/main.bc2cf156.js"
+  ]
+}
