@@ -4,6 +4,7 @@ import {
   FaCss3Alt,
   FaPython,
   FaGitAlt,
+  FaGitlab,
 } from "react-icons/fa";
 import {
   SiJavascript,
@@ -17,7 +18,11 @@ import {
   SiPostgresql,
   SiBootstrap,
   SiHeroku,
+  SiGnubash,
 } from "react-icons/si";
+import{
+  BsBraces,
+} from "react-icons/bs"
 
 const data = [
   {
@@ -43,6 +48,10 @@ const data = [
   {
     Icon: <SiGithub />,
     name: "GitHub",
+  },
+  {
+    Icon: <FaGitlab />,
+    name: "Gitlab",
   },
   {
     Icon: <SiMysql />,
@@ -80,6 +89,14 @@ const data = [
     Icon: <SiJquery />,
     name: "jQuery",
   },
+  {
+    Icon: <BsBraces />,
+    name: "RESTapi",
+  },
+  {
+    Icon: <SiGnubash />,
+    name: "Bash",
+  },
 ];
 
 const Skills = () => {
@@ -89,25 +106,26 @@ const Skills = () => {
         <span className="gradient-text">Some tools</span> that I play with{" "}
         <br className="hidden md:block" /> on a daily basis
       </label>
-      <div className="flex flex-wrap my-8 justify-center sm:justify-start">
+      <div className="flex flex-wrap my-8 justify-center sm:justify-start hover:text-white">
         {data.map((item) => (
           <div
             key={item.Icon}
-            className="md:w-36 w-32 py-4 border  rounded-xl m-2 hover:shadow-lg transition duration-500"
+            className="md:w-36 w-32 py-4 border  rounded-xl m-2 transition text-gray-300 hover:shadow-lg hover:bg-white hover:text-black"
           >
-            <div className="flex text-lg md:text-xl flex-col items-center justify-center text-gray-300 font-semibold">
+            <div className="flex text-lg md:text-xl flex-col items-center justify-center font-semibold " >
               {item.Icon}{" "}
-              <span className="text-gray-400 text-lg pt-2">{item.name}</span>
+              <span className="text-lg pt-2">{item.name}</span>
             </div>
           </div>
         ))}
       </div>
       <div>
         <label className="text-xl font-semibold text-gray-300">
-          Currently Learning{" "}
-          <span className="text-white underline ">ReactJs</span>{" "}
+          Currently Learning 
+          <span className="text-white underline ">ReactJs<br /><br /><br /><br /><br /><br /></span>{" "}
         </label>
       </div>
+          
     </div>
   );
 };

@@ -17,26 +17,26 @@ const About = () => {
           </span>
         </label>
         <label className="text-4xl sm:text-7xl font-extrabold text-gray-400 py-3">
-          I am a <span className="gradient-text">Django Developer</span>
+          I am a <span className="gradient-text">Python Developer</span>
         </label>
         <p className="text-md sm:text-xl font-semibold py-3 text-gray-400">
-          Passionate developer based in India, constantly experimenting with new technologies and techniques, striving to become a better myself as a developer.
-          {" "}
-          {/* <a
-            href="https://.com/"
+          Passionate developer based in India, constantly experimenting with new technologies and techniques, striving to become a better myself as a developer and I love what I do.
+          </p><p className="text-md sm:text-xl font-semibold py-3 text-gray-400"  >{" "}Currently I'm working in{" "}
+          <a
+            href="https://beaconinfo.tech/"
             target="_blank"
-            className="underline text-gray-700"
+            className="underline text-gray-100 hover:text-gray-500"
           >
-            dolab
-          </a>{" "} */}
-          Currently I'm freelancing as a Web Developer.
+            Beacon Infotech ™
+          </a>{" "}
+          as a Python Backend Developer.
         </p>
         <p className="text-gray-300 text-lg font-semibold">
           Is there any prospect for me? Reach me at my{" "}
           <a
             href="mailto:ilyasbabuvp@gmail.com"
             target="_blank"
-            className="underline text-white font-bold"
+            className="underline text-white font-bold hover:text-gray-500 "
           >
             e-mail
           </a>
@@ -51,6 +51,9 @@ const About = () => {
             <div className="rounded-full h-2 w-2 bg-gray-50 animate-ping ml-2"></div>
           </a>
         </div>
+        <p>
+          {" "}<br /><br /><br /><br />
+        </p>
       </div>
     </div>
   );

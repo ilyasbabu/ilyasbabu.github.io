@@ -1,5 +1,5 @@
 import React from "react";
-import { FaRegEye, FaGithub } from "react-icons/fa";
+import { FaRegEye, FaCode } from "react-icons/fa";
 import qbank from "../qbank.png"
 import artspo from "../artspo.png"
 import certi from "../certi.png"
@@ -77,12 +77,12 @@ const Projects = () => {
                     </li>
                     <li>
                       <a
-                        href={project.url}
+                        href={project.github}
                         target="_blank"
                         rel="noreferrer"
                         className=" flex items-center justify-center primary-border rounded-full hover:text-gray-100 p-2 hover:bg-gray-700 duration-500 transition text-gray-700"
                       >
-                        <FaGithub size={28} />
+                        <FaCode size={28} />
                       </a>
                     </li>
                   </ul>
