@@ -19,6 +19,7 @@ import {
   SiBootstrap,
   SiHeroku,
   SiGnubash,
+  SiFastapi,
 } from "react-icons/si";
 import{
   BsBraces,
@@ -42,6 +43,18 @@ const data = [
     name: "PostgreSQL",
   },
   {
+    Icon: <SiMysql />,
+    name: "MySQL",
+  },
+  {
+    Icon: <BsBraces />,
+    name: "RESTapi",
+  },
+  {
+    Icon: <SiFastapi />,
+    name: "FastAPI",
+  },
+  {
     Icon: <FaGitAlt />,
     name: "Git",
   },
@@ -52,10 +65,6 @@ const data = [
   {
     Icon: <FaGitlab />,
     name: "Gitlab",
-  },
-  {
-    Icon: <SiMysql />,
-    name: "MySQL",
   },
   {
     Icon: <FaHtml5 />,
@@ -90,10 +99,6 @@ const data = [
     name: "jQuery",
   },
   {
-    Icon: <BsBraces />,
-    name: "RESTapi",
-  },
-  {
     Icon: <SiGnubash />,
     name: "Bash",
   },
@@ -121,7 +126,7 @@ const Skills = () => {
       </div>
       <div>
         <label className="text-xl font-semibold text-gray-300">
-          Currently Learning 
+          Currently Learning&nbsp;
           <span className="text-white underline ">ReactJs<br /><br /><br /><br /><br /><br /></span>{" "}
         </label>
       </div>
