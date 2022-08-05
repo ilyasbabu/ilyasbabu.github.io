@@ -46,17 +46,17 @@ const Experience = () => {
                   <p className=" text-xl font-bold text-gray-300">
                     Python Backend Developer
                   </p>
-                  <p className=" text-gray-400 font-medium">Beacon Infotech ™</p>
+                  <a className=" text-gray-400 font-medium hover:text-gray-300 hover:underline transition ease-in-out duration-150" href="https://beaconinfo.tech/">Beacon Infotech ™</a>
                   <p className=" text-gray-100 mb-2">05/2022 - Present</p>
                   <ul className="text-sm text-gray-100 leading-6 ">
                     <li>
                       Worked on Backend and provided APIs for various development
                     </li>
                     <li>
-                      Worked on various projects and maintained the codebase
+                      Developed algorithm for daily recommendations on user preferences
                     </li>
                     <li>
-                      Still leaerning new technologies and techniques 
+                      Learnt new technologies and techniques 
                     </li>
                   </ul>
                 </div>
@@ -96,7 +96,7 @@ const Experience = () => {
                   <p className=" text-xl font-bold text-gray-300">
                     Freelance Django Developer
                   </p>
-                  <p className=" text-gray-400 font-medium">Dolab.io</p>
+                  <a className=" text-gray-400 font-medium hover:text-gray-300 hover:underline transition ease-in-out duration-150" href="https://dolab.tech/">Dolab.io</a>
                   <p className=" text-gray-100 mb-2">04/2021 - 04/2022</p>
                   <ul className="text-sm text-gray-100 leading-6 ">
                     <li>
@@ -146,7 +146,7 @@ const Experience = () => {
                   <p className="text-xl font-bold text-gray-300">
                     Django Developer Intern
                   </p>
-                  <p className=" text-gray-400 font-medium">Bluegen Solutions</p>
+                  <a className=" text-gray-400 font-medium hover:text-gray-300 hover:underline transition ease-in-out duration-150" href="https://bluegensolutions.com/">Bluegen Solutions</a>
                   <p className=" text-gray-100 mb-2">04/2021 - 05/2021</p>
                   <ul className="text-sm text-gray-100 leading-6 ul-bullet">
                     <li>
@@ -165,7 +165,7 @@ const Experience = () => {
                   <div>
                     <div className="flex items-center justify-center w-8 h-8 border-2 border-gray-300 rounded-full">
                       <svg
-                        className="w-4 text-gray-100"
+                        className="w-4 text-gray-100 animate-bounce"
                         stroke="currentColor"
                         strokeWidth="2"
                         strokeLinecap="round"
@@ -192,11 +192,11 @@ const Experience = () => {
                 </div>
                 <div className="pt-1 ">
                   <p className="text-xl font-bold text-gray-300">
-                    Amal College of Advanced Studies
-                  </p>
-                  <p className=" text-gray-400 font-medium">
                     B.Sc Computer Science
                   </p>
+                  <a className=" text-gray-400 font-medium hover:text-gray-300 hover:underline transition ease-in-out duration-150" href="http://www.amalcollege.ac.in/">
+                    Amal College of Advanced Studies
+                  </a>
                   <p className=" text-gray-100 mb-2">2019 - 2022</p>
                 </div>
               </div>              
