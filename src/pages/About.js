@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="my-8 pt-9">
       <div className="flex flex-col">
-        <div className="">
+        <div>
           <div className="shadow"></div> 
           <div className="bowl">
             <div className="liquid"></div>
@@ -44,7 +44,7 @@ const About = () => {
         <div className="flex items-center">
           <a
             href={resume}
-            download
+            download="Ilyas Babu Resume Updated April2023"
             className="text-xl flex items-center justify-center font-semibold py-2 my-4 bg-gray-700 text-gray-100 rounded-lg w-52"
           >
             Download my CV{" "}
