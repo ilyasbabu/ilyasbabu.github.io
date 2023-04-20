@@ -5,6 +5,8 @@ import {
   FaPython,
   FaGitAlt,
   FaGitlab,
+  FaReact,
+  FaLinux,
 } from "react-icons/fa";
 import {
   SiJavascript,
@@ -21,7 +23,7 @@ import {
   SiGnubash,
   SiFastapi,
 } from "react-icons/si";
-import{
+import {
   BsBraces,
 } from "react-icons/bs"
 
@@ -37,6 +39,10 @@ const data = [
   {
     Icon: <SiTailwindcss />,
     name: "TailwindCSS",
+  },
+  {
+    Icon: <FaReact />,
+    name: "ReactJS",
   },
   {
     Icon: <SiPostgresql />,
@@ -102,6 +108,10 @@ const data = [
     Icon: <SiGnubash />,
     name: "Bash",
   },
+  {
+    Icon: <FaLinux />,
+    name: "Linux",
+  },
 ];
 
 const Skills = () => {
@@ -115,7 +125,7 @@ const Skills = () => {
         {data.map((item) => (
           <div
             key={item.Icon}
-            className="md:w-36 w-32 py-4 border  rounded-xl m-2 transition text-gray-300 hover:shadow-lg hover:bg-white hover:text-black"
+            className="md:w-36 w-32 py-4 border rounded-md m-2 transition ease-in-out duration-300 text-gray-300 hover:shadow-lg hover:bg-white hover:text-black"
           >
             <div className="flex text-lg md:text-xl flex-col items-center justify-center font-semibold " >
               {item.Icon}{" "}
@@ -126,11 +136,12 @@ const Skills = () => {
       </div>
       <div>
         <label className="text-xl font-semibold text-gray-300">
-          Currently Learning&nbsp;
-          <span className="text-white underline ">ReactJs<br /><br /><br /><br /><br /><br /></span>{" "}
+          {/* Currently Learning&nbsp; */}
+          <span className="text-white underline ">
+            {/* ReactJs */}
+            <br /><br /><br /><br /><br /><br /></span>{" "}
         </label>
       </div>
-          
     </div>
   );
 };
