@@ -1,19 +1,22 @@
 import React from "react";
 import { FaRegEye, FaCode } from "react-icons/fa";
-import qbank from "../qbank.png"
-import artspo from "../artspo.png"
-import certi from "../certi.png"
-import kripa from "../kripa.png"
+import qbank from "../images/qbank.png"
+import artspo from "../images/artspo.png"
+import certi from "../images/certi.png"
+import kripa from "../images/kripa.png"
+import docomizer from "../images/docomizer.png"
+import sevendyz from "../images/sevendyz.png"
+import france from "../images/francefw.png"
 
 const ProjectsData = [
   {
-    title: "Question bank management",
+    title: "Docomizer - Results Management",
     description:
-      "A complete collection of Question & Answers asked on university examinations at UG level",
-    image: qbank,
-    url: "https://questionbank.kripaelectrolysis.com/",
-    github: "https://github.com/ilyasbabu/questio-bank-django",
-    techStack: "Django, TailwindCSS, PostgreSQL",
+      "Results and Marksheet management web-app primarily for University Exams",
+    image: docomizer,
+    url: "https://docomizer.vercel.app/",
+    github: "https://github.com/stars/ilyasbabu/lists/result-uploader",
+    techStack: "Django, ReactJS, TailwindCSS",
   },
   {
     title: "Arts Sports Event Management",
@@ -26,6 +29,17 @@ const ProjectsData = [
     techStack: "Django, TailwindCSS, PostgreSQL",
   },
   {
+    title: "France Football Team Website",
+    description:
+      "Simple ReactJS website made as part of Pygrammers Build4Team",
+    image:
+      france,
+    url: "https://france-football-website.vercel.app/",
+    github: "https://github.com/ilyasbabu/france-football-website",
+    techStack: "ReactJS, TailwindCSS",
+  },
+
+  {
     title: "E-Certificate Generator",
     description:
       "Generate E-certificates and send mails to users",
@@ -33,6 +47,25 @@ const ProjectsData = [
     url: "https://certificate-generate.kripaelectrolysis.com/",
     github: "https://github.com/ilyasbabu/e-Certificate-generator",
     techStack: "Django, TailwindCSS, Google Auth, APIs",
+  },
+  {
+    title: "Question bank management",
+    description:
+      "A complete collection of Question & Answers asked on university examinations at UG level",
+    image: qbank,
+    url: "https://questionbank.kripaelectrolysis.com/",
+    github: "https://github.com/ilyasbabu/questio-bank-django",
+    techStack: "Django, TailwindCSS, PostgreSQL",
+  },
+  {
+    title: "Sevendyz Babywear Buisness Website",
+    description:
+      "Simple responsive Buisness website. I've built this website for a client",
+    image:
+      sevendyz,
+    url: "https://sevendyzbabywear.com/",
+    github: "",
+    techStack: "HTML, Bootstrap, Javascript",
   },
   {
     title: "Kripa Buisness Website",
@@ -70,20 +103,25 @@ const Projects = () => {
                         href={project.url}
                         target="_blank"
                         rel="noreferrer"
-                        className=" flex items-center justify-center primary-border rounded-full hover:text-gray-100 p-2 hover:bg-gray-700 duration-500 transition text-gray-700"
+                        className="flex items-center justify-center primary-border rounded-full hover:text-gray-100 p-2 hover:bg-gray-700 duration-500 transition text-gray-700"
                       >
                         <FaRegEye size={28} />
                       </a>
                     </li>
                     <li>
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noreferrer"
-                        className=" flex items-center justify-center primary-border rounded-full hover:text-gray-100 p-2 hover:bg-gray-700 duration-500 transition text-gray-700"
-                      >
-                        <FaCode size={28} />
-                      </a>
+                      {
+                        project.github !== "" ?
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noreferrer"
+                            className=" flex items-center justify-center primary-border rounded-full hover:text-gray-100 p-2 hover:bg-gray-700 duration-500 transition text-gray-700"
+                          >
+                            <FaCode size={28} />
+                          </a>
+                          :
+                          ""
+                      }
                     </li>
                   </ul>
                 </div>
@@ -91,7 +129,7 @@ const Projects = () => {
               <h3 className="text-xl font-extrabold text-gray-50 mb-2">
                 {project.title}
               </h3>
-              <p className="text-gray-200 font-semibold truncate">
+              <p className="text-gray-200 font-semibold truncate" title={project.description}>
                 {project.description}
               </p>
               <p className="text-gray-50 font-bold">
